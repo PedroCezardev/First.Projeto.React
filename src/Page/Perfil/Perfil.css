@@ -1,0 +1,270 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: inherit;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  .navbar{
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 5rem;
+    background-color:#535bf2;
+    border-radius: 20px;
+    height: 25px;
+    margin-top: 15px;
+  }
+
+  /* Link page */
+  .links {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* estilização logo: icone e nome */
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  /* estilização ícone logo */
+  .icon{
+    display: flex;
+    font-size: 40px;
+  }
+  
+  /* div dos botões login */
+  .login{
+    display: flex;
+    gap: 1rem;
+  }
+  /* Fim do Navbar */
+
+/* header */
+.btn{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1d4ed8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #1e40af;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blur{
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+
+header{
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h1{
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+header .content h1 span{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+header .image{
+  width: 90%;
+}
+
+/* customização de habilidades */
+ .skills{
+  padding: 110px 85px 0;
+}
+
+.skills h3,
+.about h3,
+.portfolio .header h3,
+.feedback h3{
+  font-size: 40px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+h5{
+  color: #fff;
+}
+
+ .skills .skill-items{
+  display: flex;
+  margin-top: 70px;
+  display: grid; /* alinha em grade*/
+  grid-template-columns: repeat(3,1fr);
+  gap: 70px;
+}
+
+ .skills .skill-items .item{
+  background-color: #ebebf3;
+  color: #1f243d;
+  border-radius: 15px;
+  padding: 30px;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover{
+  border-bottom: 4px solid #1d4ed8;
+}
+
+.skills .skill-items .item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f243d;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-items .item .icon i{
+  font-size: 26px;
+  color: #fff;
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info h4{
+  font-size: 18px;
+}
+
+.skills .skill-items .item p{
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 22px;
+  color: #1c1353;
+}
+/* fim estilização habilidades */
+
+/* inicio do footer */
+.footer{
+  margin-top: 30px;
+  position: relative;
+  border-radius: 20px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  background-color: #535bf2b5;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+}
+
+.footer .logo a{
+  color: #ebebf3;
+}
+
+.footer .top,
+.footer .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .top .social-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+}
+
+.footer .social-links a{
+  color: #ebebf3;
+}
+
+.footer .separator{
+  width: 100%;
+  height: 1px;
+  background-color: #ebebf3;
+  margin: 30px 0 20px;
+}
+
+.footer .bottom p{
+  font-size: 14px;
+  color: #ebebf3;
+  margin-top: 20px;
+}
+
+.footer .bottom .links  a{
+  font-size: 12px;
+  margin-left: 14px;
+  color: #ebebf3;
+  margin-top: 30px;
+}
+/* fim do footer */
